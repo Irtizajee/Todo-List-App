@@ -83,6 +83,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
+  position: relative;
   
 }
 .listing-toDo_list div span{
@@ -93,6 +94,8 @@
   /* border: 1px solid red; */
   width: 70%;
   overflow-x: scroll;
+  /* position: relative; */
+  
 }
 .listing-toDo_list div span::-webkit-scrollbar{
   height: 7px;
@@ -158,12 +161,26 @@
   justify-content: space-between;
 }
 .add_btn{
-  padding: 15px 17px;
+  cursor: pointer;
+  padding: 15px 18px;
   font-size: 20px;
-  border: none;
+  border: 1px solid #59B7AB;
   border-radius: 50%;
   background-color: #59B7AB;
+  box-sizing: border-box;
 }
+.add_btn:hover{
+  /* font-size: 24px; */
+  border:1px solid #59B7AB;
+  background-color: #252525;
+  color:#59B7AB;
+}
+/* .addListBtn{
+  box-sizing: border-box;
+}
+.addListBtn:hover{
+  font-size: 25px;
+} */
 .input_field{
   width: 220px;
   border:1px solid #59B7AB;
@@ -186,4 +203,23 @@
 }
 input::placeholder{
   padding: 0px 10px;
+}
+.userEditOption{
+  /* display: none; */
+  /* border: none; */
+  outline: none;
+  padding: 14px 0px;
+  background-color: #201f1f;
+  color: white;
+  opacity: .6;
+  font-size: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+  /* border: 1px solid red; */
+  /* width: 70%; */
+  overflow-x: scroll;
+  position: absolute;
+  /* left: 0; */
+  width:54%;
+  /* height: 50%; */
+  /* width: 50px; */
 }
